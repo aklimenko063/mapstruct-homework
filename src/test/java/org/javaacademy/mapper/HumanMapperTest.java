@@ -12,7 +12,6 @@ import org.javaacademy.mapstruct_homework.entity.Work;
 import org.javaacademy.mapstruct_homework.mapper.HumanMapper;
 import org.javaacademy.mapstruct_homework.mapper.HumanMapperImpl;
 import org.junit.jupiter.api.Test;
-import org.mapstruct.factory.Mappers;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
