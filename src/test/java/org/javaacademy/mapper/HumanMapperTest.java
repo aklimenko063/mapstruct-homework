@@ -10,6 +10,7 @@ import org.javaacademy.mapstruct_homework.entity.Human;
 import org.javaacademy.mapstruct_homework.entity.Passport;
 import org.javaacademy.mapstruct_homework.entity.Work;
 import org.javaacademy.mapstruct_homework.mapper.HumanMapper;
+import org.javaacademy.mapstruct_homework.mapper.HumanMapperImpl;
 import org.junit.jupiter.api.Test;
 import org.mapstruct.factory.Mappers;
 
@@ -20,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class HumanMapperTest {
-    private final HumanMapper humanMapper = Mappers.getMapper(HumanMapper.class);
+    private final HumanMapper humanMapper = new HumanMapperImpl();
 
     @Test
     void convertFromHumanToPersonCredit() {
